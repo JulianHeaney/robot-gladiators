@@ -94,3 +94,23 @@ for (var i = 0; i < enemyNames.length; i++) {
     break;
   }
 }
+
+
+var endgame = function() {
+    if (playerHealth > 0) {
+        window.alert("Great jorb, you fuckin' did it y'all! You now have a score of " + playerMoney + ".");
+
+    }
+    else {
+        window.alert("You lost bruh. Too bad.");
+    }
+}
+
+var playAgainConfirm = window.confirm("Up for another go at it?");
+
+if (playAgainConfirm) {
+    startGame();
+}
+else {
+    window.alert("Thanks for playing. See yo later bro.")
+}
